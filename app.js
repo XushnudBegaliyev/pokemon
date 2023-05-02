@@ -1,13 +1,13 @@
 
 
-
 let btn = document.querySelector("#btn");
 let section = document.querySelector(".pokomen");
 let input = document.querySelector("#input");
-let btnn = document.querySelector("#btnn")
-let btnn1 = document.querySelector("#btnn1")
-let btnn2 = document.querySelector("#btnn2")
-let tan = document.querySelector("#tanla")
+let btnn = document.querySelector("#btnn");
+let btnn1 = document.querySelector("#btnn1");
+let btnn2 = document.querySelector("#btnn2");
+let tan = document.querySelector("#tanla");
+ let h1 = document.querySelector(".h11");
 
 const menu = [
     {
@@ -117,9 +117,25 @@ btn.addEventListener("click", () => {
         } 
         section.innerHTML = ui
 
-    })
+    });
+
+if (inputvalu === "shakes") {
+   document.querySelector(".h11").textContent = ""
+} else if (inputvalu === "lunch") {
+   document.querySelector(".h11").textContent = ""
+    
+}else if (inputvalu === "breakfast") {
+    document.querySelector(".h11").textContent = ""
+     
+ } else {
+    document.querySelector(".h11").textContent = "Kechirasiz bunday taom topilmadi"
+    document.querySelector(".h11").style.opacity = "1"   
+
+ }
 
 });
+
+
 
 // tugma 1
 btnn.addEventListener("click" , () =>{
@@ -150,6 +166,7 @@ btnn.addEventListener("click" , () =>{
         }
         section.innerHTML = ui
     })
+    document.querySelector(".h11").style.opacity = "-1"   
 })
 
 // tugma 2
@@ -183,6 +200,8 @@ btnn1.addEventListener("click" , () =>{
         }
         section.innerHTML = ui
     })
+    document.querySelector(".h11").style.opacity = "-1"   
+
 })
 
 
@@ -217,9 +236,11 @@ btnn2.addEventListener("click" , () =>{
         }
         section.innerHTML = ui
     })
+    document.querySelector(".h11").style.opacity = "-1"   
+
 })
 
-
+// slect 
 tan.addEventListener("click", () => {
     let ui = ""
     const inputvalu = tan.value
@@ -250,6 +271,7 @@ tan.addEventListener("click", () => {
         section.innerHTML = ui
 
     })
+    document.querySelector(".h11").style.opacity = "-1"   
 
 });
 

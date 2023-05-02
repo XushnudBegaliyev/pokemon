@@ -11,12 +11,13 @@
 </head>
 <body>
 
-    
+   <div class="wrapper">
+     
     <div class="countenr">
         <div class="poko">
            <img src="./images/./poko.jpg" alt=""> 
         </div>
-
+<h1 class="h11"></h1>
       <div class="ser">
         <select class="select" id="tanla">
             <option value="" class="option1">Gross</option>
@@ -24,10 +25,12 @@
             <option value="lunch" class="option" id=" option2">lunch</option>
             <option value="shakes" class="option" id=" option3">shakes</option>
            </select>
-        <input type="name" name="" id="input" class="input" placeholder="Search">
+        <form action="#">
+            <input type="name" name="" id="input" class="input" placeholder="Search">
       <div class="batt">
-        <button id="btn"  class="btn"><i class="fa-solid fa-magnifying-glass" id="ser" ></i></button>
+        <button type="submit" id="btn"  class="btn"><i class="fa-solid fa-magnifying-glass" id="ser" ></i></button>
       </div>
+        </form>
  
 
       </div>
@@ -36,9 +39,6 @@
         <button class="select1" id="btnn1">Breakfast</button>
         <button class="select1" id="btnn2">Lunch</button>
     </div>
-    
-        <!-- <div class="section"></div> -->
-
 
         <div class="pokomen">
             <div class="poko1">
@@ -129,6 +129,7 @@
     
 
 
+   </div>
 
     <script src="./app.js"></script>
 </body>
