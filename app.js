@@ -132,9 +132,13 @@ if (inputvalu === "shakes") {
     document.querySelector(".h11").style.opacity = "1"   
 
  }
+restform()
 
 });
 
+const restform = () => {
+input.value = ""
+}
 
 
 // tugma 1
@@ -210,7 +214,6 @@ btnn1.addEventListener("click" , () =>{
 
 btnn2.addEventListener("click" , () =>{
     let ui = ""
-
     const bek = btnn.category =  "lunch"; 
     menu.map(itme =>{
         if (bek === itme.category) {
